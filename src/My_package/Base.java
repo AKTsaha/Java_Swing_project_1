@@ -31,27 +31,160 @@ public class Base extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu1 = new javax.swing.JMenu();
         Base_left_panel = new javax.swing.JPanel();
+        Side_left_panel_1 = new javax.swing.JPanel();
+        Side_left_lable_1 = new javax.swing.JLabel();
+        Side_left_panel_2 = new javax.swing.JPanel();
+        Side_left_lable_2 = new javax.swing.JLabel();
+        Side_left_panel_3 = new javax.swing.JPanel();
+        Side_left_lable_3 = new javax.swing.JLabel();
+        Side_left_panel_4 = new javax.swing.JPanel();
+        Side_left_lable_4 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         Close_panel = new javax.swing.JPanel();
         Close_icon_lable = new javax.swing.JLabel();
+        button1 = new java.awt.Button();
+
+        jMenu1.setText("jMenu1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setAutoRequestFocus(false);
         setBackground(new java.awt.Color(255, 255, 255));
         setLocation(new java.awt.Point(100, 100));
         setUndecorated(true);
 
         Base_left_panel.setBackground(new java.awt.Color(252, 45, 255));
 
+        Side_left_panel_1.setBackground(new java.awt.Color(252, 45, 255));
+        Side_left_panel_1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Side_left_panel_1MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Side_left_panel_1MouseEntered(evt);
+            }
+        });
+
+        Side_left_lable_1.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        Side_left_lable_1.setForeground(new java.awt.Color(255, 255, 255));
+        Side_left_lable_1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Side_left_lable_1.setText("Home");
+
+        javax.swing.GroupLayout Side_left_panel_1Layout = new javax.swing.GroupLayout(Side_left_panel_1);
+        Side_left_panel_1.setLayout(Side_left_panel_1Layout);
+        Side_left_panel_1Layout.setHorizontalGroup(
+            Side_left_panel_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Side_left_lable_1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        Side_left_panel_1Layout.setVerticalGroup(
+            Side_left_panel_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Side_left_lable_1, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        Side_left_panel_2.setBackground(new java.awt.Color(252, 45, 255));
+        Side_left_panel_2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Side_left_panel_2MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Side_left_panel_2MouseEntered(evt);
+            }
+        });
+
+        Side_left_lable_2.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        Side_left_lable_2.setForeground(new java.awt.Color(255, 255, 255));
+        Side_left_lable_2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Side_left_lable_2.setText("Friends");
+
+        javax.swing.GroupLayout Side_left_panel_2Layout = new javax.swing.GroupLayout(Side_left_panel_2);
+        Side_left_panel_2.setLayout(Side_left_panel_2Layout);
+        Side_left_panel_2Layout.setHorizontalGroup(
+            Side_left_panel_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Side_left_lable_2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        Side_left_panel_2Layout.setVerticalGroup(
+            Side_left_panel_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Side_left_lable_2, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        Side_left_panel_3.setBackground(new java.awt.Color(252, 45, 255));
+        Side_left_panel_3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Side_left_panel_3MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Side_left_panel_3MouseEntered(evt);
+            }
+        });
+
+        Side_left_lable_3.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        Side_left_lable_3.setForeground(new java.awt.Color(255, 255, 255));
+        Side_left_lable_3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Side_left_lable_3.setText("Massage");
+
+        javax.swing.GroupLayout Side_left_panel_3Layout = new javax.swing.GroupLayout(Side_left_panel_3);
+        Side_left_panel_3.setLayout(Side_left_panel_3Layout);
+        Side_left_panel_3Layout.setHorizontalGroup(
+            Side_left_panel_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Side_left_lable_3, javax.swing.GroupLayout.DEFAULT_SIZE, 233, Short.MAX_VALUE)
+        );
+        Side_left_panel_3Layout.setVerticalGroup(
+            Side_left_panel_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Side_left_lable_3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+        );
+
+        Side_left_panel_4.setBackground(new java.awt.Color(252, 45, 255));
+        Side_left_panel_4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Side_left_panel_4MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Side_left_panel_4MouseEntered(evt);
+            }
+        });
+
+        Side_left_lable_4.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        Side_left_lable_4.setForeground(new java.awt.Color(255, 255, 255));
+        Side_left_lable_4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Side_left_lable_4.setText("Profile");
+
+        javax.swing.GroupLayout Side_left_panel_4Layout = new javax.swing.GroupLayout(Side_left_panel_4);
+        Side_left_panel_4.setLayout(Side_left_panel_4Layout);
+        Side_left_panel_4Layout.setHorizontalGroup(
+            Side_left_panel_4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Side_left_lable_4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        Side_left_panel_4Layout.setVerticalGroup(
+            Side_left_panel_4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Side_left_lable_4, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout Base_left_panelLayout = new javax.swing.GroupLayout(Base_left_panel);
         Base_left_panel.setLayout(Base_left_panelLayout);
         Base_left_panelLayout.setHorizontalGroup(
             Base_left_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 308, Short.MAX_VALUE)
+            .addGroup(Base_left_panelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Base_left_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Side_left_panel_1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Side_left_panel_2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Side_left_panel_3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Side_left_panel_4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         Base_left_panelLayout.setVerticalGroup(
             Base_left_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 815, Short.MAX_VALUE)
+            .addGroup(Base_left_panelLayout.createSequentialGroup()
+                .addGap(221, 221, 221)
+                .addComponent(Side_left_panel_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Side_left_panel_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(Side_left_panel_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Side_left_panel_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(255, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(252, 45, 255));
@@ -89,7 +222,7 @@ public class Base extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(0, 847, Short.MAX_VALUE)
+                .addGap(0, 910, Short.MAX_VALUE)
                 .addComponent(Close_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -97,24 +230,33 @@ public class Base extends javax.swing.JFrame {
             .addComponent(Close_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        button1.setLabel("button1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(Base_left_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(347, 347, 347))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Base_left_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(340, 340, 340)
+                .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        pack();
+        setSize(new java.awt.Dimension(1231, 815));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void Close_icon_lableMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Close_icon_lableMouseEntered
@@ -138,6 +280,46 @@ public class Base extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_Close_icon_lableMouseClicked
+
+    private void Side_left_panel_1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_panel_1MouseEntered
+        // TODO add your handling code here:
+        Side_left_panel_1.setBackground(new java.awt.Color(204, 0, 204));
+    }//GEN-LAST:event_Side_left_panel_1MouseEntered
+
+    private void Side_left_panel_1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_panel_1MouseExited
+        // TODO add your handling code here:
+        Side_left_panel_1.setBackground(new java.awt.Color(252, 45, 255));
+    }//GEN-LAST:event_Side_left_panel_1MouseExited
+
+    private void Side_left_panel_2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_panel_2MouseEntered
+        // TODO add your handling code here:
+        Side_left_panel_2.setBackground(new java.awt.Color(204, 0, 204));
+    }//GEN-LAST:event_Side_left_panel_2MouseEntered
+
+    private void Side_left_panel_2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_panel_2MouseExited
+        // TODO add your handling code here:
+        Side_left_panel_2.setBackground(new java.awt.Color(252, 45, 255));
+    }//GEN-LAST:event_Side_left_panel_2MouseExited
+
+    private void Side_left_panel_3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_panel_3MouseEntered
+        // TODO add your handling code here:
+        Side_left_panel_3.setBackground(new java.awt.Color(204, 0, 204));
+    }//GEN-LAST:event_Side_left_panel_3MouseEntered
+
+    private void Side_left_panel_3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_panel_3MouseExited
+        // TODO add your handling code here:
+        Side_left_panel_3.setBackground(new java.awt.Color(252, 45, 255));
+    }//GEN-LAST:event_Side_left_panel_3MouseExited
+
+    private void Side_left_panel_4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_panel_4MouseEntered
+        // TODO add your handling code here:
+        Side_left_panel_4.setBackground(new java.awt.Color(204, 0, 204));
+    }//GEN-LAST:event_Side_left_panel_4MouseEntered
+
+    private void Side_left_panel_4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_panel_4MouseExited
+        // TODO add your handling code here:
+        Side_left_panel_4.setBackground(new java.awt.Color(252, 45, 255));
+    }//GEN-LAST:event_Side_left_panel_4MouseExited
 
     /**
      * @param args the command line arguments
@@ -178,6 +360,16 @@ public class Base extends javax.swing.JFrame {
     private javax.swing.JPanel Base_left_panel;
     private javax.swing.JLabel Close_icon_lable;
     private javax.swing.JPanel Close_panel;
+    private javax.swing.JLabel Side_left_lable_1;
+    private javax.swing.JLabel Side_left_lable_2;
+    private javax.swing.JLabel Side_left_lable_3;
+    private javax.swing.JLabel Side_left_lable_4;
+    private javax.swing.JPanel Side_left_panel_1;
+    private javax.swing.JPanel Side_left_panel_2;
+    private javax.swing.JPanel Side_left_panel_3;
+    private javax.swing.JPanel Side_left_panel_4;
+    private java.awt.Button button1;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
 }
