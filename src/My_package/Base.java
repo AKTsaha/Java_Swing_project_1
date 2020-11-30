@@ -5,6 +5,7 @@
  */
 package My_package;
 
+import java.awt.CardLayout;
 import java.awt.Color;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,10 +19,12 @@ public class Base extends javax.swing.JFrame {
     /**
      * Creates new form Base
      */
+    CardLayout cardlayout;
     public Base() {
         initComponents();
+        cardlayout = (CardLayout)(Center_CardLayout.getLayout());
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -32,6 +35,7 @@ public class Base extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenu1 = new javax.swing.JMenu();
+        jFrame1 = new javax.swing.JFrame();
         Base_left_panel = new javax.swing.JPanel();
         Side_left_panel_1 = new javax.swing.JPanel();
         Side_left_lable_1 = new javax.swing.JLabel();
@@ -44,9 +48,24 @@ public class Base extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         Close_panel = new javax.swing.JPanel();
         Close_icon_lable = new javax.swing.JLabel();
-        button1 = new java.awt.Button();
+        Center_CardLayout = new javax.swing.JPanel();
+        Center_panel_1 = new javax.swing.JPanel();
+        Center_panel_2 = new javax.swing.JPanel();
+        Center_panel_3 = new javax.swing.JPanel();
+        Center_panel_4 = new javax.swing.JPanel();
 
         jMenu1.setText("jMenu1");
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAutoRequestFocus(false);
@@ -70,6 +89,17 @@ public class Base extends javax.swing.JFrame {
         Side_left_lable_1.setForeground(new java.awt.Color(255, 255, 255));
         Side_left_lable_1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Side_left_lable_1.setText("Home");
+        Side_left_lable_1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Side_left_lable_1MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Side_left_lable_1MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Side_left_lable_1MouseEntered(evt);
+            }
+        });
 
         javax.swing.GroupLayout Side_left_panel_1Layout = new javax.swing.GroupLayout(Side_left_panel_1);
         Side_left_panel_1.setLayout(Side_left_panel_1Layout);
@@ -96,6 +126,17 @@ public class Base extends javax.swing.JFrame {
         Side_left_lable_2.setForeground(new java.awt.Color(255, 255, 255));
         Side_left_lable_2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Side_left_lable_2.setText("Friends");
+        Side_left_lable_2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Side_left_lable_2MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Side_left_lable_2MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Side_left_lable_2MouseEntered(evt);
+            }
+        });
 
         javax.swing.GroupLayout Side_left_panel_2Layout = new javax.swing.GroupLayout(Side_left_panel_2);
         Side_left_panel_2.setLayout(Side_left_panel_2Layout);
@@ -122,6 +163,17 @@ public class Base extends javax.swing.JFrame {
         Side_left_lable_3.setForeground(new java.awt.Color(255, 255, 255));
         Side_left_lable_3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Side_left_lable_3.setText("Massage");
+        Side_left_lable_3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Side_left_lable_3MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Side_left_lable_3MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Side_left_lable_3MouseEntered(evt);
+            }
+        });
 
         javax.swing.GroupLayout Side_left_panel_3Layout = new javax.swing.GroupLayout(Side_left_panel_3);
         Side_left_panel_3.setLayout(Side_left_panel_3Layout);
@@ -148,6 +200,17 @@ public class Base extends javax.swing.JFrame {
         Side_left_lable_4.setForeground(new java.awt.Color(255, 255, 255));
         Side_left_lable_4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Side_left_lable_4.setText("Profile");
+        Side_left_lable_4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Side_left_lable_4MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Side_left_lable_4MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Side_left_lable_4MouseEntered(evt);
+            }
+        });
 
         javax.swing.GroupLayout Side_left_panel_4Layout = new javax.swing.GroupLayout(Side_left_panel_4);
         Side_left_panel_4.setLayout(Side_left_panel_4Layout);
@@ -184,7 +247,7 @@ public class Base extends javax.swing.JFrame {
                 .addComponent(Side_left_panel_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(Side_left_panel_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(255, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(252, 45, 255));
@@ -230,7 +293,67 @@ public class Base extends javax.swing.JFrame {
             .addComponent(Close_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        button1.setLabel("button1");
+        Center_CardLayout.setLayout(new java.awt.CardLayout());
+
+        Center_panel_1.setBackground(new java.awt.Color(204, 0, 204));
+
+        javax.swing.GroupLayout Center_panel_1Layout = new javax.swing.GroupLayout(Center_panel_1);
+        Center_panel_1.setLayout(Center_panel_1Layout);
+        Center_panel_1Layout.setHorizontalGroup(
+            Center_panel_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 984, Short.MAX_VALUE)
+        );
+        Center_panel_1Layout.setVerticalGroup(
+            Center_panel_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 741, Short.MAX_VALUE)
+        );
+
+        Center_CardLayout.add(Center_panel_1, "Center_panel_1");
+
+        Center_panel_2.setBackground(new java.awt.Color(255, 51, 102));
+
+        javax.swing.GroupLayout Center_panel_2Layout = new javax.swing.GroupLayout(Center_panel_2);
+        Center_panel_2.setLayout(Center_panel_2Layout);
+        Center_panel_2Layout.setHorizontalGroup(
+            Center_panel_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 984, Short.MAX_VALUE)
+        );
+        Center_panel_2Layout.setVerticalGroup(
+            Center_panel_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 741, Short.MAX_VALUE)
+        );
+
+        Center_CardLayout.add(Center_panel_2, "Center_panel_2");
+
+        Center_panel_3.setBackground(new java.awt.Color(51, 255, 51));
+
+        javax.swing.GroupLayout Center_panel_3Layout = new javax.swing.GroupLayout(Center_panel_3);
+        Center_panel_3.setLayout(Center_panel_3Layout);
+        Center_panel_3Layout.setHorizontalGroup(
+            Center_panel_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 984, Short.MAX_VALUE)
+        );
+        Center_panel_3Layout.setVerticalGroup(
+            Center_panel_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 741, Short.MAX_VALUE)
+        );
+
+        Center_CardLayout.add(Center_panel_3, "Center_panel_3");
+
+        Center_panel_4.setBackground(new java.awt.Color(51, 51, 255));
+
+        javax.swing.GroupLayout Center_panel_4Layout = new javax.swing.GroupLayout(Center_panel_4);
+        Center_panel_4.setLayout(Center_panel_4Layout);
+        Center_panel_4Layout.setHorizontalGroup(
+            Center_panel_4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 984, Short.MAX_VALUE)
+        );
+        Center_panel_4Layout.setVerticalGroup(
+            Center_panel_4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 741, Short.MAX_VALUE)
+        );
+
+        Center_CardLayout.add(Center_panel_4, "Center_panel_4");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -238,21 +361,22 @@ public class Base extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(Base_left_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(347, 347, 347))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Center_CardLayout, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(979, 979, 979))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(100, 100, 100))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Base_left_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(340, 340, 340)
-                .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Center_CardLayout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         setSize(new java.awt.Dimension(1231, 815));
@@ -321,6 +445,66 @@ public class Base extends javax.swing.JFrame {
         Side_left_panel_4.setBackground(new java.awt.Color(252, 45, 255));
     }//GEN-LAST:event_Side_left_panel_4MouseExited
 
+    private void Side_left_lable_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_lable_1MouseClicked
+        // TODO add your handling code here:
+        cardlayout.show(Center_CardLayout,"Center_panel_1");
+    }//GEN-LAST:event_Side_left_lable_1MouseClicked
+
+    private void Side_left_lable_2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_lable_2MouseClicked
+        // TODO add your handling code here:
+        cardlayout.show(Center_CardLayout,"Center_panel_2");
+    }//GEN-LAST:event_Side_left_lable_2MouseClicked
+
+    private void Side_left_lable_1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_lable_1MouseEntered
+        // TODO add your handling code here:
+        Side_left_panel_1.setBackground(new java.awt.Color(204, 0, 204));
+    }//GEN-LAST:event_Side_left_lable_1MouseEntered
+
+    private void Side_left_lable_1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_lable_1MouseExited
+        // TODO add your handling code here:
+        Side_left_panel_1.setBackground(new java.awt.Color(252, 45, 255));
+    }//GEN-LAST:event_Side_left_lable_1MouseExited
+
+    private void Side_left_lable_2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_lable_2MouseEntered
+        // TODO add your handling code here:
+        Side_left_panel_2.setBackground(new java.awt.Color(204, 0, 204));
+    }//GEN-LAST:event_Side_left_lable_2MouseEntered
+
+    private void Side_left_lable_2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_lable_2MouseExited
+        // TODO add your handling code here:
+        Side_left_panel_2.setBackground(new java.awt.Color(252, 45, 255));
+    }//GEN-LAST:event_Side_left_lable_2MouseExited
+
+    private void Side_left_lable_3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_lable_3MouseEntered
+        // TODO add your handling code here:
+        Side_left_panel_3.setBackground(new java.awt.Color(204, 0, 204));
+    }//GEN-LAST:event_Side_left_lable_3MouseEntered
+
+    private void Side_left_lable_3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_lable_3MouseExited
+        // TODO add your handling code here:
+        Side_left_panel_3.setBackground(new java.awt.Color(252, 45, 255));
+    }//GEN-LAST:event_Side_left_lable_3MouseExited
+
+    private void Side_left_lable_3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_lable_3MouseClicked
+        // TODO add your handling code here:
+        cardlayout.show(Center_CardLayout,"Center_panel_3");
+    }//GEN-LAST:event_Side_left_lable_3MouseClicked
+
+    private void Side_left_lable_4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_lable_4MouseEntered
+        // TODO add your handling code here:
+        Side_left_panel_4.setBackground(new java.awt.Color(204, 0, 204));
+    }//GEN-LAST:event_Side_left_lable_4MouseEntered
+
+    private void Side_left_lable_4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_lable_4MouseExited
+        // TODO add your handling code here:
+         Side_left_panel_4.setBackground(new java.awt.Color(252, 45, 255));
+    }//GEN-LAST:event_Side_left_lable_4MouseExited
+
+    private void Side_left_lable_4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Side_left_lable_4MouseClicked
+        // TODO add your handling code here:
+        cardlayout.show(Center_CardLayout,"Center_panel_4");
+    }//GEN-LAST:event_Side_left_lable_4MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -358,6 +542,11 @@ public class Base extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Base_left_panel;
+    private javax.swing.JPanel Center_CardLayout;
+    private javax.swing.JPanel Center_panel_1;
+    private javax.swing.JPanel Center_panel_2;
+    private javax.swing.JPanel Center_panel_3;
+    private javax.swing.JPanel Center_panel_4;
     private javax.swing.JLabel Close_icon_lable;
     private javax.swing.JPanel Close_panel;
     private javax.swing.JLabel Side_left_lable_1;
@@ -368,7 +557,7 @@ public class Base extends javax.swing.JFrame {
     private javax.swing.JPanel Side_left_panel_2;
     private javax.swing.JPanel Side_left_panel_3;
     private javax.swing.JPanel Side_left_panel_4;
-    private java.awt.Button button1;
+    private javax.swing.JFrame jFrame1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
